@@ -15,6 +15,7 @@
   jobs:
   
     test:
+      environment: testing
   
       env:  
         MONGODB_CLUSTER_ADDRESS: cluster0.oon9lgr.mongodb.net  
