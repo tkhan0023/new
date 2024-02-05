@@ -18,7 +18,7 @@
   
       env:  
         MONGODB_CLUSTER_ADDRESS: cluster0.oon9lgr.mongodb.net  
-        MONGO_USERNAME: ${{ secrets.MONGODB_USERNAME}}  
+        MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME}}  
         MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD}}
         PORT: 8080
      
@@ -59,4 +59,4 @@
       - name: Output information    
         run: |
           echo "MONGODB_USERNAME: ${{ env.MONGODB_USERNAME }}"   
-          echo "MONGODB_DB_NAME: ${{ env.MONGODB_DB_NAME }}"
+          echo "MONGODB_DB_NAME: $MONGO_DB_NAME"
